@@ -1,0 +1,70 @@
+@import 'breakpoints';
+@import 'colors';
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap');
+
+$redhat-display: 'Red Hat Display', sans-serif;
+
+* {
+  font-family: $redhat-display;
+}
+
+@mixin h1-style {
+  color: $black;
+  font-weight: 900;
+
+  @media (min-width: $screen-mobile) {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  @media (min-width: $screen-tablet) {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    font-size: 64px;
+    line-height: 64px;
+  }
+}
+
+@mixin h2-style {
+  color: $black;
+  font-weight: 900;
+
+  @media (min-width: $screen-mobile) {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $screen-tablet) {
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+
+@mixin p-style {
+  color: $gray;
+  font-weight: 500;
+
+  @media (min-width: $screen-mobile) {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    font-size: 18px;
+  }
+}
+
+@mixin overline-style {
+  color: $green;
+  font-weight: 900;
+  text-transform: uppercase;
+
+  @media (min-width: $screen-mobile) {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 4px;
+  }
+}
