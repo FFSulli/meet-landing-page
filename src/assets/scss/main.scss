@@ -14,5 +14,72 @@ p {
   @include p-style
 }
 
+.container {
+  max-width: $screen-desktop;
+  margin: 0 auto;
+}
+
+.logo {
+  display: inline-block;
+  @media (min-width: $screen-mobile) {
+    margin: 48px auto 54px auto;
+  }
+
+  @media (min-width: $screen-tablet) {
+    margin: 48px auto 64px auto;
+  }
+
+  @media (min-width: $screen-desktop ) {
+    margin: 80px auto 61px auto;
+  }
+}
+
+.hero {
+  @media (min-width: $screen-mobile) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__picture {
+    @media (min-width: $screen-mobile) {
+      max-width: 414px;
+    }
+
+    @media (min-width: $screen-tablet) {
+      max-width: 820px;
+    }
+  }
+
+  &__picture--desktop {
+    @media (min-width: $screen-mobile) {
+      display: none;
+    }
+  }
+
+  &__title {
+    @media (min-width: $screen-mobile) {
+      text-align: center;
+      justify-content: center;
+      margin: 48px 0 24px 0;
+    }
+
+    @media (min-width: $screen-tablet) {
+      margin-top: 72px;
+    }
+  }
+
+  &__text {
+    @media (min-width: $screen-mobile) {
+      text-align: center;
+      padding: 0 24px;
+    }
+
+    @media (min-width: $screen-tablet) {
+      padding: 0 156px;
+    }
+  }
+}
+
+
 
 

@@ -1,26 +1,27 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Logo />
+    <Hero />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Logo from "@/components/Header/Logo";
+import Hero from "@/components/Header/Hero";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Logo,
+    Hero
   }
 }
 </script>
 
-<style>
-#app {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss" scoped>
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 </style>
